@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    box-sizing: border-box;
+}
+body {
+    background-color: azure;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(234deg, #a3497e,rgb(40, 63, 40));
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.col:nth-child(2), .col:nth-child(2){
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+}
+ul li{
+list-style: none;
+margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far {
+    font-size: 18px;;
+    margin-right: 10px;
+}
+form input {
+    width: 100%;
+    background-color: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    columns: #000;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+text-align: center;
+}
+.underline {
+    width: 100%;
+    height: 5px;
+    background:#524b4b;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background:#2c2c2c;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10ox;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis:100%;
+
+    }
+    .col:nth-child(2), .col:nth-child(2){
+        flex-basis: 100%;
+    }
+}
